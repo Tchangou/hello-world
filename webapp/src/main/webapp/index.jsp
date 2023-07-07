@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<title>
+		Form validation using HTML and JavaScript
+	</title>
+</head>
+
 <body>
-
-<h2>HTML Forms</h2>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+	<h1 style="text-align: center;">
+		REGISTRATION FORM
+	</h1>
+	<form name="RegForm" onsubmit="return GEEKFORGEEKS()"
+		method="post">
+		<p>
+			Name:
+			<input type="text" size="65" name="Name" />
+		</p>
+		<br />
+		<p>
+			Address:
+			<input type="text" size="65" name="Address" />
+		</p>
+		<br />
+		<p>
+			E-mail Address:
+			<input type="text" size="65" name="EMail" />
+		</p>
+		<br />
+		<p>
+			Password:
+			<input type="text" size="65" name="Password" />
+		</p>
+		<br />
+		<p>
+			Telephone:
+			<input type="text" size="65" name="Telephone" />
+		</p>
+		<br />
+		<p>
+			SELECT YOUR COURSE
+			<select type="text" value="" name="Subject">
+				<option>BTECH</option>
+				<option>BBA</option>
+				<option>BCA</option>
+				<option>B.COM</option>
+				<option>GEEKFORGEEKS</option>
+			</select>
+		</p>
+		<br />
+		<br />
+		<p>
+			Comments:
+			<textarea cols="55" name="Comment"> </textarea>
+		</p>
+		<p>
+			<input type="submit" value="send" name="Submit" />
+			<input type="reset" value="Reset" name="Reset" />
+		</p>
+	</form>
 </body>
 </html>
-
